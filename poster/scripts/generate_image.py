@@ -14,7 +14,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 SCRIPT_DIR = Path(__file__).parent
-THEME_PATH = SCRIPT_DIR / "theme.json"
+THEME_PATH = SCRIPT_DIR.parent / "content" / "theme.json"
 
 CANVAS = 1600
 MARGIN = 140
