@@ -2,9 +2,8 @@ name: Auto-post to Facebook & Instagram
 
 on:
   schedule:
-    # TEMP placeholder — Mon/Wed/Fri 08:00 Asia/Manila (00:00 UTC).
-    # Will be finalized once the posting schedule is confirmed.
-    - cron: "0 0 * * 1,3,5"
+    # Mon/Wed/Fri 22:00 Asia/Manila = 14:00 UTC (same calendar day, UTC+8).
+    - cron: "0 14 * * 1,3,5"
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab, for testing
 
 permissions:
